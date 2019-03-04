@@ -8,6 +8,7 @@ app.set('view engine', '.hbs');
 
 app.use(express.static(__dirname + '/public'));
 app.use(subdomain('slo', require('./controllers/slo')));
+app.use(subdomain('housing', require('./controllers/housing.js')));
 app.use(require('./controllers'));
 
 app.listen(process.env.PORT);
