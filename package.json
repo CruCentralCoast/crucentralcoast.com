@@ -1,0 +1,33 @@
+{
+  "name": "crucentralcoast-node",
+  "version": "1.0.0",
+  "description": "Cru Central Coast Website",
+  "main": "app.js",
+  "engines": {
+    "node": "^11.10.0",
+    "npm": ">=6.7.0"
+  },
+  "scripts": {
+    "start": "node app.js",
+    "dev-start": "nodemon",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CruCentralCoast/slocru.git"
+  },
+  "author": "Kyle Reis (@fedorareis)",
+  "bugs": {
+    "url": "https://github.com/CruCentralCoast/slocru/issues"
+  },
+  "homepage": "https://github.com/CruCentralCoast/slocru#readme",
+  "dependencies": {
+    "express": "^4.16.4",
+    "express-handlebars": "^3.0.2",
+    "express-subdomain": "^1.0.5",
+    "firebase-admin": "^7.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.10"
+  }
+}

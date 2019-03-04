@@ -1,0 +1,93 @@
+<div class="container">
+    <div id="sidebar">
+        <p class="title">MINISTRY TEAMS</p>
+        <div class="list-group" id="list">
+            {{#each ministries as |ministry|}}
+            <a href="#{{ministry.id}}" data-toggle="tab" class="list-group-item teams">
+                {{ministry.name}}
+            </a>
+            {{/each}}
+        </div>
+    </div>
+    <div id='content' class="tab-content">
+        <div class="Select-team tab-pane fade in active">
+            <p class="select">SELECT A TEAM<br>TO LEARN MORE</p>
+        </div>
+        {{#each ministries as |ministry|}}
+
+        <div class="ministry tab-pane fade" id="{{ministry.id}}" style="text-align: center">
+            <img class="photo" src="{{ministry.img}}" />
+            <p class="ministry-name">{{ministry.name}}</p>
+            <p class="description">
+                {{ministry.description}}
+            </p>
+            <p class="description">
+                {{#if ministry.leaders}}
+                <i>Leaders:
+                    {{#each leaders as |leader|}}
+                    {{leader.name.first}} {{leader.name.last}}
+                    {{#if @last}}{{else}}, {{/if}}
+                    {{/each}}
+                </i>
+                {{/if}}
+            </p><br>
+            {{!-- <a class="sign-up" data-toggle="modal" href="#{{ministry.id}}modal" class="button">Sign-up Here</a> --}}
+            <br>
+            <br>
+            <br>
+        </div>
+
+        {{!-- <div class="modal fade" id="{{ministry.id}}modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h4 class="modal-title">Sign up for {{ministry.name}}!</h4>
+                    </div>
+                    <form action="/ministry/mail/" class="form-horizontal" role="form" method="post">
+                        <div class="modal-body">
+                            <div class="form-group">
+                                <label for="inputName" class="col-lg-2 control-label">Name</label>
+                                <div class="col-lg-10">
+                                    <input type="text" name="name" class="form-control" id="inputName"
+                                        placeholder="Name" />
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="inputEmail" class="col-lg-2 control-label">Email</label>
+                                <div class="col-lg-10">
+                                    <input type="text" name="email" class="form-control" id="inputEmail"
+                                        placeholder="Email" />
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="inputCell" class="col-lg-2 control-label">Cell Phone</label>
+                                <div class="col-lg-10">
+                                    <input type="text" name="cell" class="form-control" id="inputCell"
+                                        placeholder="Cell Phone Number" />
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="inputNotes" class="col-lg-2 control-label">Notes</label>
+                                <div class="col-lg-10">
+                                    <textarea name="notes" class="form-control" id="inputNotes" rows="5"
+                                        placeholder="Type in any information you would like us to know..."></textarea>
+                                    {{#if ministry.leaders}}
+                                    <input type="hidden" name="tls" value="{{ministry.leaders.0.email}}" />
+                                    {{/if}}
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            <button type="submit" id="submit_button" class="btn btn-primary"
+                                data-loading-text="Sending...">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div> --}}
+        {{/each}}
+    </div>
+</div>

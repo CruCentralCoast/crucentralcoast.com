@@ -1,0 +1,29 @@
+<div class="container">
+    {{#each staff as |group|}}
+
+    <div class="{{group.group}}">
+        <div class="header">
+            <hr class="header-lines-{{group.group}}" />
+            <p class="header-{{group.group}}">{{group.title}}</p>
+            <hr class="header-lines-{{group.group}}" />
+        </div>
+        {{#each group.staff as |person|}}
+        <div class="card">
+
+            {{#if person.img}}
+            <img src="{{person.img}}" class="picture">
+            {{else}}
+            <div class="picture"></div>
+            {{/if}}
+            <p class="{{group.group}}-name">{{person.name}}</p>
+            <p class="role">{{person.role}}</p>
+            {{#if person.email}}
+            <p class="email"><a href="mailto:{{person.email}}" target="_blank">{{person.email}}</a></p>
+            {{else}}
+            <p>&nbsp;</p>
+            {{/if}}
+        </div>
+        {{/each}}
+    </div>
+    {{/each}}
+</div>
