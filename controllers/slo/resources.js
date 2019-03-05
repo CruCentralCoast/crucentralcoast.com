@@ -1,9 +1,9 @@
 const express = require('express');
-const router = express.Router();
+const router = express.Router(); // eslint-disable-line
 
-//slo specific routes
-router.get('/', function (req, res) {
-  let links = [
+// slo specific routes
+router.get('/', function(req, res) {
+  const links = [
     {
       name: 'Cru Press Green',
       href: 'http://www.crupressgreen.com',
@@ -33,7 +33,7 @@ router.get('/', function (req, res) {
 
   const pdfPath = '/resources/pdf/';
 
-  let downloads = [
+  const downloads = [
     {
       type: 'Articles',
       resources: [
@@ -63,7 +63,7 @@ router.get('/', function (req, res) {
         },
         {
           name: 'Practical Steps to Guidance',
-          href: pdfPath + 'Practical_Steps_to_Guidance.pdf'
+          href: pdfPath + 'Practical_Steps_to_Guidance.pdf',
         },
       ],
     },
@@ -76,13 +76,13 @@ router.get('/', function (req, res) {
         },
         {
           name: 'Prayer',
-          href: pdfPath + 'Bible_Study_On_Prayer.pdf'
+          href: pdfPath + 'Bible_Study_On_Prayer.pdf',
         },
       ],
     },
-  ]
+  ];
 
-  let guides = [
+  const guides = [
     {
       type: 'Prayer',
       resources: [
@@ -100,7 +100,7 @@ router.get('/', function (req, res) {
         },
         {
           name: 'The Purpose of Prayer',
-          href: 'http://www.cru.org/training-and-growth/classics/10-basic-steps/4-prayer/index.htm'
+          href: 'http://www.cru.org/training-and-growth/classics/10-basic-steps/4-prayer/index.htm',
         },
       ],
     },
@@ -133,11 +133,11 @@ router.get('/', function (req, res) {
         },
         {
           name: 'Book: Celebration of Discipline by Richard J Foster',
-          href: 'http://www.amazon.com/Celebration-Discipline-Path-Spiritual-Growth/dp/0060628391'
+          href: 'http://www.amazon.com/Celebration-Discipline-Path-Spiritual-Growth/dp/0060628391',
         },
       ],
     },
-  ]
+  ];
   res.render('slo/resources', {
     page: 'resources',
     links: links,

@@ -88,16 +88,20 @@ p.applying#line1 {
     float: right;
     background-image: url("../img/placeholders/leadership.png");
     height: inherit;
+    background-position: center;
 }
 
 .picture-overlay {
     background-color: rgba(0,0,0,0.6);
     height: inherit;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .picture-text {
-    margin-left: 150pt;
-    margin-right: 30pt;
+    width: 65%;
+    margin-left: auto;
+    margin-right: auto;
     padding-top: 140pt;
     font-size: 14pt;
 }
@@ -201,4 +205,9 @@ p.links {
 
 sup {
     font-size: 60%;
+}
+
+.next-steps {
+    display: list-item;
+    padding: 0;
 }

@@ -1,0 +1,22 @@
+{
+    "parserOptions": {
+        "ecmaVersion": 2017
+    },
+    "plugins": [],
+    "extends": "google",
+    "rules": {
+        "no-unused-vars": [
+            "error",
+            {
+                "vars": "local",
+                "args": "none"
+            }
+        ],
+        "max-len": [
+            "error",
+            {
+                "code": 100
+            }
+        ]
+    }
+}
