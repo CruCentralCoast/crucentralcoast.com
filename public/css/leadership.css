@@ -86,9 +86,10 @@ p.applying#line1 {
 .picture {
     width: 66%;
     float: right;
-    background-image: url("../img/placeholders/leadership.png");
+    background-image: url("../img/placeholders/leadership.jpg");
     height: inherit;
     background-position: center;
+    background-position-y: top;
 }
 
 .picture-overlay {
