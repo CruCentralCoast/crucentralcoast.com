@@ -5,4 +5,4 @@ admin.initializeApp({
   databaseURL: 'https://cru-demo.firebaseio.com',
 });
 
-module.exports = admin.firestore()
+module.exports = admin.firestore();
