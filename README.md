@@ -10,3 +10,7 @@ This project contains the code for both crucentralcoast.com and slo.crucentralco
  - add the PORT to your environment
  - add the FIREBASE_CONFIG to your environment (if you don't have this reach out to a team lead or Kyle on slack)
  - run `npm run dev-start` or `npm run start`
+
+## Tech
+
+We currently use express.js for routing and handelbars for templating. We are using firebase for data storage and custom models for data loading. We would like to see the site move to using React.js and possibly Redux.
