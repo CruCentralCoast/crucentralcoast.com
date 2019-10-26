@@ -21,6 +21,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="/img/logo2.png">
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/506125f2fa.js" crossorigin="anonymous"
+        integrity="sha384-tCIa9x35rFwAnPYwDCoqImEiB9Ai31jfzeslK4Q53KZAXSFi24Px912eIpefo9Bj"></script>
     <script src="/js/header.js"></script>
     <!-- Bootstrap -->
     <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,400italic' rel='stylesheet'
@@ -28,7 +30,6 @@
     <link href="/css/bootstrap.css" rel="stylesheet" media="screen" />
     <link href="/css/nivo-slider.css" rel="stylesheet" media="screen" />
     <link href="/themes/light/light.css" rel="stylesheet" media="screen" />
-    <link href="/css/font-awesome.css" rel="stylesheet" media="screen" />
     <!-- Page Formatting -->
     <link href="/css/default.css" rel="stylesheet" type="text/css">
     <!-- Loads the CSS for the specific page -->
@@ -43,22 +44,33 @@
                     <img src="/img/crulogo.png" class="logo" />
                 </a>
                 <!-- Snapchat link goes here -->
-                <a href="https://www.youtube.com/user/slocrusade" target="_blank">
-                    <img src="/img/youtube.png" class="social-youtube" id="youtube" />
+                <a href="https://www.youtube.com/user/slocrusade" target="_blank" class="social" id="youtube">
+                    <span class="fa-stack fa-sm">
+                        <i class="fas fa-circle fa-stack-2x"></i>
+                        <i class="fab fa-youtube fa-stack-1x fa-inverse"></i>
+                    </span>
                 </a>
-                <a href="https://twitter.com/CruCalPolySLO" target="_blank">
-                    <img src="/img/twitter.png" class="social" id="twitter" />
+                <a href="https://twitter.com/CruCalPolySLO" target="_blank" class="social" id="twitter">
+                    <span class="fa-stack fa-sm">
+                        <i class="fas fa-circle fa-stack-2x"></i>
+                        <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                    </span>
                 </a>
-                <a href="https://www.instagram.com/crucalpolyslo/" target="_blank">
-                    <img src="/img/instagram.png" class="social" id="instagram" />
+                <a href="https://www.instagram.com/crucalpolyslo/" target="_blank" class="social" id="instagram">
+                    <span class="fa-stack fa-sm">
+                        <i class="fas fa-circle fa-stack-2x"></i>
+                        <i class="fab fa-instagram fa-stack-1x fa-inverse"></i>
+                    </span>
                 </a>
-                <a href="https://www.facebook.com/CruCalPolySLO/" target="_blank">
-                    <img src="/img/facebook.png" class="social" id="facebook" />
+                <a href="https://www.facebook.com/CruCalPolySLO/" target="_blank" class="social" id="facebook">
+                    {{!-- <i class="fab fa-facebook fa-2x"></i> --}}
+                    <span class="fa-stack fa-sm">
+                        <i class="fas fa-circle fa-stack-2x"></i>
+                        <i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
+                    </span>
                 </a>
-                <a href="ccc">
-                    <!-- TODO: replace image with actual text and icon -->
-                    <img data-alt-src="/img/back-crucentral_full-blue.png" src="/img/back-crucentral_full.png"
-                        class="central" id="to-landing" />
+                <a href="ccc" class="central" id="to-landing">
+                    <i class="fas fa-long-arrow-alt-left"></i> back to Cru Central Coast
                 </a>
             </div>
 
@@ -118,7 +130,6 @@
         </div>
     </div>
     <script src="http://code.jquery.com/jquery.js"></script>
-    <script src="/js/bootstrap.js"></script>
     {{{body}}}
     <div class="container">
         <p id="footer">&copy;

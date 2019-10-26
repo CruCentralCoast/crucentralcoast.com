@@ -47,31 +47,26 @@ a:hover {
 img.logo {
     margin-left: 40px;
     margin-top: 25px;
-    width: 100pt;
     height: 75pt;
 }
 
-img.central {
+a.central {
     float: right;
     margin-top: 35px;
     margin-right: 6px;
+    font-size: 8pt;
+    color: #666062;
 }
 
-img.social {
+a.central:hover {
+    color: #007398;
+}
+
+a.social {
     float: right;
-    width: 20pt;
-    height: 20pt;
-    margin-right: 6px;
     margin-top: 30px;
-}
-
-img.social-youtube {
-    float: right;
-    width: 26pt;
-    height: 26pt;
-    margin-left: -3pt;
-    margin-right: 6px;
-    margin-top: 26px;
+    color: #d1d3d4;
+    font-size: 12pt;
 }
 
 li {
@@ -117,7 +112,7 @@ a.menu-items {
     display: none;
 }
 
-#twitter:hover, #facebook:hover, #instagram:hover, #youtube:hover {
+.social:hover {
     opacity: .5;
 }
 
