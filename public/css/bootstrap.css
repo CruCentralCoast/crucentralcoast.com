@@ -301,7 +301,7 @@ html {
 
 body {
   /*font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;*/
-  font-family: 'Source Sans Pro', sans-serif;  
+  font-family: 'Source Sans Pro', sans-serif;
   font-size: 14px;
   line-height: 1.428571429;
   color: #333333;
@@ -2050,8 +2050,6 @@ fieldset[disabled] .btn {
 .btn-default.active,
 .open .dropdown-toggle.btn-default {
   color: #333333;
-  /*background-color: #ebebeb;*/
-  /*background-image: url('../img/slocru_button.png');*/
   border-color: #adadad;
 }
 
