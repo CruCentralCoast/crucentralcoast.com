@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-export default (
+export default () => (
   <div>
     <img src="/img/landing/cru-central-coast.png" id="CCC" />
 
