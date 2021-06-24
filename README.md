@@ -1,5 +1,7 @@
 # Cru Central Coast website
 
+## NOTE: This project is being archived since we have switched from a completely custom site to using a hosted site builder
+
 This project contains the code for both crucentralcoast.com and slo.crucentralcoast.com
 
 ## Getting started with Dev
